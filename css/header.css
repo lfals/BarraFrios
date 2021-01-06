@@ -1,6 +1,6 @@
 .ht-header__logo{ width:120px; }
 .ht-header__social{ width: 80px; }
-.ht-header__cta{ width: 198px;}
+.ht-header__cta{ width: 183px;}
 .ht-header__nav{ width: 50%; }
 
 /* .ht-header__logo,
@@ -45,12 +45,12 @@
 }
 .ht-header__nav--label{
   text-decoration: none;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 18px;
 
     /* Gray 1 */
 
-    color: #333333;
+    color: #00263B;
 }
 .ht-header__subitem{
   position: absolute;
@@ -90,12 +90,12 @@
 
   font-size: 1.25rem;
   text-decoration: none;
-  color: #281D75;
+  color: #FF5200;
 }
 .ht-header__contact{
   padding:15px 20px;
-  background-color: #219653;
-  border-radius: 20px;
+  background-color: #FF5200;
+  border-radius: 15px;
   display: flex;
   align-items: center;
 

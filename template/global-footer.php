@@ -3,30 +3,17 @@ $logo = ht_get_logo();
 $contatos = ht_get_contact();
 $social = ht_get_social();
 $nav = ht_get_nav();
+
 ?>
+
+
 
 <div class="footer">
   <div class="footer__logo">
-    <?php if(!empty($logo["main"])): ?>
-      <img src="<?php print $logo["main"]["url"]; ?>" class="footer__logo--image" alt="Logo <?php print bloginfo("name"); ?>">
+    <?php if(!empty($logo["secound"])): ?>
+      <img src="<?php print $logo["secound"]["url"]; ?>" class="footer__logo--image" alt="Logo <?php print bloginfo("name"); ?>">
     <?php else: ?>
       <span class="footer__logo--text"><?php print bloginfo("name"); ?></span>
-    <?php endif; ?>
-  </div>
-  <div class="footer__nav">
-    <?php if(!empty($nav["nav"])): ?>
-      <div  class="footer__nav--item">
-       
-      </div>
-      <?php foreach($nav["nav"] as $n): ?>
-        <?php if(empty($n["sub_item"])): ?>
-        <div  class="footer__nav--item">
-          <a href="<?php print $n["url"] ?>" class="ht-header__nav--label">
-            <?php print $n["label"] ?>
-          </a>
-        </div>
-        <?php endif; ?>
-      <?php endforeach; ?>
     <?php endif; ?>
   </div>
   <div class="footer__social">
@@ -48,6 +35,23 @@ $nav = ht_get_nav();
       <?php endif; ?>
     <?php endif; ?>
   </div>
+  <div class="footer__nav">
+    <?php if(!empty($nav["nav"])): ?>
+      <div  class="footer__nav--item">
+       
+      </div>
+      <?php foreach($nav["nav"] as $n): ?>
+        <?php if(empty($n["sub_item"])): ?>
+        <div  class="footer__nav--item">
+          <a href="<?php print $n["url"] ?>" class="ht-header__nav--label">
+            <?php print $n["label"] ?>
+          </a>
+        </div>
+        <?php endif; ?>
+      <?php endforeach; ?>
+    <?php endif; ?>
+  </div>
+  
   <div class="footer__items">
     <a href="https://hattrickcomunicacao.com.br" class="footer__link footer__link--hat-trick" target="_blank">
       Desenvolvido por<br>

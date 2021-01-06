@@ -18,6 +18,27 @@ $nav = ht_get_nav();
     </a>
   </div>
   
+  <div class="ht-header__social">
+    <?php if(!empty($social)): ?>
+      <?php if(!empty($social["facebook"])): ?>
+        <a href="<?php print $social["facebook"]; ?>" class="ht-header__social--item">
+          <i class="fab fa-facebook-square ht-header__social--icon"></i>
+        </a>
+      <?php endif; ?>
+      <?php if(!empty($social["instagram"])): ?>
+        <a href="<?php print $social["instagram"]; ?>" class="ht-header__social--item">
+          <i class="fab fa-instagram ht-header__social--icon"></i>
+        </a>
+      <?php endif; ?>
+      <?php if(!empty($social["linkedin"])): ?>
+        <a href="<?php print $social["linkedin"]; ?>" class="ht-header__social--item">
+          <i class="fab fa-linkedin-in ht-header__social--icon"></i>
+        </a>
+      <?php endif; ?>
+    <?php endif; ?>
+  </div>
+
+
   <div class="ht-header__nav">
     <?php if(!empty($nav["nav"])): ?>
       <?php foreach($nav["nav"] as $n): ?>
@@ -40,30 +61,11 @@ $nav = ht_get_nav();
     <?php endif; ?>
   </div>
 
-  <div class="ht-header__social">
-    <?php if(!empty($social)): ?>
-      <?php if(!empty($social["facebook"])): ?>
-        <a href="<?php print $social["facebook"]; ?>" class="ht-header__social--item">
-          <i class="fab fa-facebook-square ht-header__social--icon"></i>
-        </a>
-      <?php endif; ?>
-      <?php if(!empty($social["instagram"])): ?>
-        <a href="<?php print $social["instagram"]; ?>" class="ht-header__social--item">
-          <i class="fab fa-instagram ht-header__social--icon"></i>
-        </a>
-      <?php endif; ?>
-      <?php if(!empty($social["linkedin"])): ?>
-        <a href="<?php print $social["linkedin"]; ?>" class="ht-header__social--item">
-          <i class="fab fa-linkedin-in ht-header__social--icon"></i>
-        </a>
-      <?php endif; ?>
-    <?php endif; ?>
-  </div>
-
+  
   <div class="ht-header__cta">
     <?php if(!empty($nav["contact"])): ?>
       <a href="<?php print $nav["contact"] ?>" class="ht-header__contact">
-        <img src="<?php print get_template_directory_uri(); ?>/image/icon-cta.png" class="ht-header__contact--icon" alt="Ícone do CTA"> Fale conosco
+        Entre em Contato
       </a>
     <?php endif; ?>
   </div>
