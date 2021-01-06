@@ -1,0 +1,46 @@
+.ht__float-whatsapp {
+  z-index: 900;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  position: fixed;
+  right: 1.5%;
+  bottom: 2.5%;
+  /* Green 2 */
+  background: #e2f0e8;
+}
+
+.ht__float-whatsapp div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  background: #abd7be;
+}
+
+.ht__float-whatsapp div div {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: #27ae60;
+  color: white;
+  font-size: 30px;
+}
+/*# sourceMappingURL=float.css.map */

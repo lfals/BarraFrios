@@ -1,0 +1,134 @@
+@font-face {
+  font-family: Montserrat;
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+}
+
+.ht_global_services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 80px;
+  min-height: 773px;
+  background-color: #281D75;
+  color: white;
+}
+
+.ht_global_services > h1 {
+  margin-bottom: 40px;
+  font-size: 28px;
+  font-weight: bold;
+  max-width: 600px;
+  text-align: center;
+}
+
+.ht_global_services > p {
+  margin-bottom: 76px;
+  font-weight: 400;
+  max-width: 600px;
+  text-align: center;
+}
+
+.ht_global_services div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.ht_service_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex !important;
+  flex-direction: column !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 413px;
+  max-width: 413px;
+  height: 438px;
+  background-color: white;
+  color: #281D75;
+  border-radius: 10px;
+  padding: 30px;
+  margin-right: 20px;
+}
+
+.ht_service_card h1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.ht_service_card img {
+  width: 150px;
+  height: 150px;
+}
+
+.ht_service_card a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 159px;
+  height: 60px;
+  border: 1px solid #281D75;
+  -webkit-filter: drop-shadow(0px 15px 30px #281D75);
+          filter: drop-shadow(0px 15px 30px #281D75);
+  border-radius: 20px;
+  color: #281D75;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  align-items: center;
+  text-align: center;
+}
+@media(max-width:700px){
+  .ht_global_services > p {
+    max-width: 285px;
+    text-align: justify;
+}
+  .ht_service_card{
+    display: flex !important;
+    justify-content: space-around;
+    padding: 60px 0;
+    margin: 15px 0;
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 1025px) {
+  .ht_global_services div {
+  
+    margin: 30px 0;
+  }
+}
+/*# sourceMappingURL=servicos.css.map */

@@ -1,0 +1,162 @@
+.about{
+  padding:100px 100px;
+  background-color: #F2F2F2;
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-areas: "about__content about__image";
+  align-items: center;
+  grid-gap: 50px;
+  width: 100%;
+}
+@media(max-width:500px){
+  .about{
+    display: flex;
+    flex-direction: column;
+  }
+}
+.about__image{ 
+  grid-area: about__image;
+  text-align: center; 
+}
+.about__content{ grid-area: about__content; display: flex; justify-content: center; }
+.about__content div h2{
+  max-width: 500px;
+
+  color: #281D75;
+}
+.about__content span{
+  color: #219653;
+}
+
+.about__text{
+  margin:50px 0; 
+
+  font-size: 1.125rem;
+  max-width: 566px;
+
+  max-height: 300px;
+  padding-right: 64px;
+}
+.about__text p{
+  letter-spacing: 1px;
+  line-height: 22px;
+  text-align: justify;
+  
+  padding-right: 64px;
+  max-width: 502px;
+}
+.about__text b,
+.about__text strong{ font-family: GothamBold; }
+@media(min-width:768px){
+  .title{
+    max-width: 285px;
+    line-height: 42px;
+  }
+  .title p {
+    line-height: 42px !important;
+  }
+  
+  .about__text--scroll{
+    max-height: 400px;
+    overflow: auto;
+  }
+  .about__text--scroll::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 100px;
+    transition: ease-in 0.3s;
+  }
+
+  /* Track */
+  .about__text--scroll::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 100px;
+    transition: ease-in 0.3s;
+  }
+
+  /* Handle */
+  .about__text--scroll::-webkit-scrollbar-thumb {
+    background: #333333;
+    border-radius: 100px;
+  }
+
+  /* Handle on hover */
+  .about__text--scroll::-webkit-scrollbar-thumb:hover {
+    background: #333333;
+  }
+}
+.about__text p{ 
+  
+  margin-bottom: 25px; 
+  padding: 0;
+}
+
+@media(max-width:767px){
+  .about{
+    display: flex;
+    flex-direction: column;
+  }
+  .about,
+  .regimento,
+  .institucional{
+    padding:100px 35px;
+  }
+
+  .title p {
+    line-height: 42px !important;
+  }
+}
+.about p,
+.regimento p,
+.institucional p{ line-height: 22px; }
+
+.regimento,
+.institucional,
+.valores{
+  padding: 150px 35px;
+
+  color: #ffffff;
+  text-align: center;
+}
+.regimento{ background: #1B3C86; }
+.institucional{ background: #2A60D4; }
+.valores{ background: #A89939; }
+.regimento__download{ margin-top: 45px; }
+.regimento__wrapper,
+.valores__wrapper{
+  max-width: 800px;
+  margin:0 auto;
+}
+.regimento__title{ text-align: center;}
+.institucional__wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 25px;
+  max-width: 800px;
+  margin:0 auto;
+}
+@media(max-width:750px){
+  .institucional__wrapper{
+    grid-template-columns: 1fr;
+    grid-gap: 100px;
+  }
+}
+.materiais__list{
+  margin:10px auto;
+  width: 100%;
+  max-width: 350px;
+  border:1px solid #cccccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.materiais__item{
+  display: block;
+  padding:10px;
+  border:0;
+  border-bottom: 1px solid #cccccc;
+
+  color: #666666;
+  text-decoration: none;
+  text-align: center;
+}
+.materiais__item:nth-child(odd){ background-color: #fafafa; }
+.materiais__item:hover{ background-color: #eaeaea;}

@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+.home-banner__title{
+  text-align: start;
+  width: 100%;
+
+}
+
+.home-banner__link{
+  margin: 0;
+}
+.home-banner__item{
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+.home-banner__item--desktop{
+  justify-content: flex-start;
+}
+.home-banner__content--desktop{
+  width: 100vw;
+  height: 100%;
+  padding:15px;
+  display: flex;
+  align-items: center;
+  background-image:linear-gradient(270deg, rgba(46, 62, 131, 0) 0%, #2E3E83 70%);;
+}
+.home-banner__wrapper--desktop{
+  padding:15px 20vw 15px 15px ;
+  margin-left: 20vw;
+}
+.home-banner__title--desktop{
+  margin-bottom: 25px;
+
+  color: #ffffff;
+  font: 600 36px 'Montserrat'
+}
+.home-banner__title--desktop span:nth-child(1){
+  color: #84FF91;
+}
+.home-banner__title--desktop span:nth-child(3){
+  color: #FFB41E;
+}
+.home-banner__text--desktop{
+  margin-bottom: 60px;
+
+  font-size: 1rem;
+  font-family: Gotham;
+  text-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  color: #ffffff;
+}
+
+.home-banner__link--desktop{
+  display:flex;
+  width: 210px;
+  height: 53px;
+
+  align-items: center;
+  justify-content: center;
+
+  background-color: #ffffff;
+  border-radius: 15px;
+  margin-top: 25px;
+
+  text-decoration: none;
+  font-family: GothamBold;
+  color: #2E3E83;
+}
+.home-banner__link--desktop i,
+.home-banner__link--mobile i{ margin-right: 15px; }
+
+.home-banner__content--mobile{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-banner__wrapper--mobile{
+  width: 100%;
+  padding:20px;
+  margin-left: 10vw;
+}
+.home-banner__title--mobile{
+  margin-bottom: 25px;
+
+  margin-bottom: 25px;
+
+  color: #ffffff;
+  font: 600 36px 'Montserrat';
+}
+.home-banner__title--mobile span:nth-child(1){
+  color: #84FF91;
+}
+.home-banner__title--mobile span:nth-child(3){
+  color: #FFB41E;
+}
+
+.home-banner__text--mobile{
+  margin-bottom: 60px;
+
+  font-size: 1rem;
+  font-family: Gotham;
+  text-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  color: #ffffff;
+
+  max-width: 250px;
+
+}
+
+@media(max-width:1023px){
+ 
+}
+@media(max-width:500px){
+  .home-banner--desktop{ display: none !important; }
+  .home-banner--mobile{ display: block !important; }
+
+  .slick-dots{
+    position: absolute;
+    width: 100%;
+    display: flex !important;
+    justify-content: center;
+    bottom: 15px;
+    margin: 0 auto;
+  }
+
+  .slick-dots li{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    overflow: hidden;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 1000px;
+    margin-right: 5px;
+
+    text-indent: -9000px;
+  }
+  .slick-dots li:last-child{ margin-right: 0;}
+  .slick-dots li.slick-active{ background: rgba(255,255,255,1);}
+}
+@media(min-width:501px){
+  .home-banner--desktop{ display: block !important; }
+  .home-banner--mobile{ display: none !important; }
+
+  .slick-dots{
+    position: absolute;
+    height: 100%;
+    width: 15px;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 5px;
+    margin: 0 auto;
+  }
+  .slick-dots li{
+    list-style: none;
+    margin-bottom: 5px;
+    display: block;
+  }
+  .slick-dots button{
+    display: block;
+    width: 10px;
+    height: 10px;
+    overflow: hidden;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 1000px;
+    cursor: pointer;
+
+    text-indent: -9000px;
+  }
+  .slick-dots button:focus{ outline: none; }
+  .slick-dots .slick-active{
+    background: rgba(255,255,255,1);
+    width: 10px;
+    height: 10px;
+    border-radius: 1000px;
+  }
+}

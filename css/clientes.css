@@ -1,0 +1,62 @@
+.ht__global-clientes {
+  width: 100vw;
+  min-height: 570px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-image: url(../image/bg-client.png);
+}
+
+.ht__global-clientes h1 {
+  font: bold 28px 'Montserrat';
+  color: #281D75;
+}
+
+.ht__global-clientes p {
+  font-size: 16px;
+  text-align: center;
+  max-width: 600px;
+}
+
+.ht__global-clientes div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.ht__global-clientes div button {
+  background: none;
+  font-size: 61px;
+  color: #281D75;
+}
+
+.ht__global-clientes div img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media(max-width:500px){
+  .ht__global-clientes h1{
+    text-align: center;
+    margin-left:15vw;
+    margin-right:15vw;
+  }
+  .ht__global-clientes p{
+    margin-left:10vw;
+    margin-right:10vw;
+  }
+}
+/*# sourceMappingURL=clientes.css.map */

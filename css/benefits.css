@@ -1,0 +1,118 @@
+.ht__benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 890px;
+  background-color: #281D75;
+}
+
+.ht__benefits > h1 {
+  margin-top: 100px;
+  font: 700 28px 'Montserrat';
+  color: white;
+}
+
+.ht__benefits > span {
+  width: 30%;
+  height: 2px;
+  margin-top: 30px;
+  background-color: #C29844;
+}
+
+.ht__benefits > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  max-width: 90vw;
+  margin-bottom: 100px;
+}
+
+.ht_benefits_cards {
+  margin: 30px 30px 0 0;
+}
+
+.ht_benefits_cards > h1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #FFAA00;
+}
+
+.ht_benefits_cards_body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 250px;
+}
+
+.ht_benefits_cards_body h1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  /* or 150% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.ht_benefits_cards_body img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+@media(max-width:700px){
+  .ht__benefits h1{
+    text-align: center;
+  }
+  .ht__benefits > div > div{
+    margin: 15px 0;
+  }
+  .ht_benefits_cards_group{
+    width: 100%;
+    display: flex !important;
+    justify-content: center;
+  }
+}
+/*# sourceMappingURL=benefits.css.map */
