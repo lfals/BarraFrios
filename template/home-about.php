@@ -12,7 +12,7 @@ if(!empty($about)):
   </div>
   <div class="about__content">
     <div class="wrapper">
-      <h2 class="title">Conheça a Qualitec</h2>
+      <h2 class="title">Conheça a Barra Frios</h2>
       <div class="about__text">
         <?php print wpautop($about); ?>
       </div>

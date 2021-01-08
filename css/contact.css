@@ -16,6 +16,44 @@
   display: grid;
   grid-template-columns: repeat(3,1fr);
 }
+.contato-wraper{
+  height: 60vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url( ../image/banner-contato.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contato-wraper h1{
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+
+  margin-bottom: 40px;
+}
+.contato-wraper p{
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+
+  margin-bottom: 40px;
+  max-width: 412px;
+}
+
+.ht__contato-cta{
+
+  color: #fff;
+  background: #FF5200;
+  border-radius: 15px;
+
+  text-align: center;
+
+  width: 238px;
+  height: 51px;
+}
 @media(max-width:800px){
   .contact__form{
     width: 100%;

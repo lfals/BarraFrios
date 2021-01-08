@@ -6,7 +6,7 @@ $size = 'full'; // (thumbnail, medium, large, full or custom size)
 ?>
 
 <div class="ht__global-clientes">
-    <h1>Clientes que Confiaram em Nós</h1>
+    <h1>Conheça Nossos Parceiros</h1>
     <p><?php print $subtitle ?></p>
     <div>
         <button class="prev_arrow"><i class="fas fa-angle-left"></i></button>

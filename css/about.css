@@ -1,12 +1,68 @@
 .about{
   padding:100px 100px;
-  background-color: #F2F2F2;
+  background-color: #00263B;
   display:grid;
   grid-template-columns: repeat(2,1fr);
   grid-template-areas: "about__content about__image";
   align-items: center;
   grid-gap: 50px;
   width: 100%;
+}
+.produtos{
+  display: flex;
+
+  height: 80vh;
+  background-color: #E64900;
+  overflow: hidden;
+}
+.imagem img{
+  width: 50vw;
+}
+.bloco-texto{
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto;
+}
+.bloco-texto h1{
+  margin-bottom: 40px;
+
+  width: 100%;
+  
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  text-align: start;
+
+}
+.bloco-texto p{
+  margin-bottom: 60px;
+
+  font-size: 18px;
+  max-width: 420px;
+
+  color: #fff;
+}
+.ht_produtos__cta-button{
+  align-self: flex-start;
+  
+  background: #00263B;
+  border-radius: 20px;
+  width: 159px;
+  height: 60px;
+
+  filter: drop-shadow(0px 15px 30px rgba(40, 29, 117, 0.25));
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff;
+  
+
 }
 @media(max-width:500px){
   .about{
@@ -22,10 +78,10 @@
 .about__content div h2{
   max-width: 500px;
 
-  color: #281D75;
+  color: #fff;
 }
 .about__content span{
-  color: #219653;
+  color: #fff;
 }
 
 .about__text{
@@ -47,6 +103,15 @@
 }
 .about__text b,
 .about__text strong{ font-family: GothamBold; }
+
+.about__cta a{
+  color: #fff;
+
+  background-color: #FF5200 ;
+
+  filter: drop-shadow(0px 15px 30px rgba(40, 29, 117, 0.25));
+  
+}
 @media(min-width:768px){
   .title{
     max-width: 285px;

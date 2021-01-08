@@ -82,6 +82,7 @@ jQuery(document).ready(function($) {
   });
   $('.parceiros__list--home').slick({
     infinite: true,
+    centerPadding: '60px',
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,

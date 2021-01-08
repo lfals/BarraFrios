@@ -34,9 +34,10 @@
 }
 .home-banner__title--desktop{
   margin-bottom: 25px;
+  max-width: 400px;
 
   color: #ffffff;
-  font: 600 36px 'Montserrat'
+  font: 600 48px 'Montserrat'
 }
 .home-banner__title--desktop span:nth-child(1){
   color: #84FF91;
@@ -47,10 +48,12 @@
 .home-banner__text--desktop{
   margin-bottom: 60px;
 
-  font-size: 1rem;
+  font-size: 16px;
   font-family: Gotham;
   text-shadow: 0 5px 10px rgba(0,0,0,0.15);
   color: #ffffff;
+
+  max-width: 413px;
 }
 
 .home-banner__link--desktop{
@@ -61,13 +64,13 @@
   align-items: center;
   justify-content: center;
 
-  background-color: #ffffff;
+  background-color: #FF5200;
   border-radius: 15px;
   margin-top: 25px;
 
   text-decoration: none;
   font-family: GothamBold;
-  color: #2E3E83;
+  color: #fff;
 }
 .home-banner__link--desktop i,
 .home-banner__link--mobile i{ margin-right: 15px; }
