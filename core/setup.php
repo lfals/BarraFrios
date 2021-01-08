@@ -82,9 +82,13 @@ $ht->add_options_pages("Depoimentos", "conf_testimony", "Depoimentos", "conf_sit
 * Tipos de post
 */
 
-$servicos = new ht_custom_post("Vagas", "vagas");
-$servicos->set_arg("menu_icon", "dashicons-insert");
-$servicos->do_post();
+$vagas = new ht_custom_post("Vagas", "vagas");
+$vagas->set_arg("menu_icon", "dashicons-insert");
+$vagas->do_post();
+
+$produtos = new ht_custom_post("Produtos", "produto");
+$produtos->set_arg("menu_icon", "dashicons-products");
+$produtos->do_post();
 
 // $mural = new ht_custom_post("Mural de recados", "mural");
 // $mural->set_arg("menu_icon", "dashicons-megaphone");

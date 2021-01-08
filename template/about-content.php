@@ -11,7 +11,7 @@ if(!empty($about)):
   </div>
   <div class="about__content">
     <div class="wrapper">
-      <h2 class="title"><?php print the_content( ) ?></h2>
+      <h2 class="title">Tradição e Qualidade até sua mesa</h2>
       <div class="about__text about__text--scroll">
         <?php print wpautop($about); ?>
       </div>

@@ -100,6 +100,26 @@ jQuery(document).ready(function($) {
       },
     ]
   });
+  $('.cortes-carrossel').slick({
+    infinite: true,
+    centerPadding: '60px',
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    prevArrow: '.prev_arrow',
+    nextArrow: '.next_arrow',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerPadding: "60px",
+          dots : true,
+        }
+      },
+    ]
+  });
 
   $('.ht_services_carroussel_card').slick({
     infinite: true,

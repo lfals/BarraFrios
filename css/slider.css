@@ -113,6 +113,161 @@
   max-width: 250px;
 
 }
+.mais-vendidos{
+  width: 100vw;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+
+          justify-content: space-evenly;
+
+  background-color: #F2F2F2;
+}
+.mais-vendidos>h1{
+  font-size: 28px;
+  font-weight: bolder;
+  color: #00263B;
+}
+.cortes-carrossel-wraper{
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+}
+
+
+.cortes-carrossel-wraper button{
+  background: none;
+}
+.cortes-carrossel{
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+
+}
+
+.cortes-card{
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px;
+
+  width: 232px !important;
+  height: 421px;
+
+  background-color: #fff;
+  box-shadow: 5px 10px 20px rgba(196, 196, 196, 0.5);
+  border-radius: 10px;
+}
+.cortes-card h1{
+  font-size: 14px;
+  font-weight: bold;
+  color: #00263B;
+}
+.cortes-card p {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: normal;
+  color: #828282;
+}
+
+.cortes-card > a{
+  width: 192px;
+  height: 51px;
+
+  background: #00263B;
+  border-radius: 15px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.foto-corte{
+  width: 192px;
+  height: 192px;
+
+  background-color: #f2f2f2;
+
+  border-radius: 10px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-button a {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 142px;
+  height: 41px;
+
+  background: #ff5100f8;
+  border-radius: 10px;
+
+  color: #fff;
+  cursor: pointer;
+
+  transition: all 0.2s;
+  
+}
+
+.image-button a:hover{
+  background: #c94000f8;
+  
+}
+.image-button{
+  opacity: 0;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+
+  transition: all 0.2s;
+
+}
+
+.image-button:hover{
+  opacity: 1;
+  background-color: rgba(26,26,26,0.5);
+}
+
+
+.button_mais-produtos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 188px;
+  height: 51px;
+
+  background: #FF5200;
+  border-radius: 15px;
+
+  color: #fff;
+  text-decoration: none;
+}
 
 @media(max-width:1023px){
  
