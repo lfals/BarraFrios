@@ -1,6 +1,7 @@
 .header-produto{
   min-height: 90vh;
   padding-top: 70px;
+  margin-bottom: 150px;
 }
 
 .header-produto > div{

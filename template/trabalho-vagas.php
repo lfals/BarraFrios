@@ -19,8 +19,10 @@
         ?>
         <div class="ht_vagas_cards">
             <h1><?php print the_title() ?></h1>
-            <p><?php the_excerpt(  ) ?></p>
-        </div>
+			<div>
+           		 <p><?php the_excerpt(  ) ?></p>
+			</div>
+			</div>
         <?php
             endwhile;
             wp_reset_postdata(); 
