@@ -92,6 +92,8 @@
 
   max-height: 300px;
   padding-right: 64px;
+
+  color: #fff;
 }
 .about__text p{
   letter-spacing: 1px;

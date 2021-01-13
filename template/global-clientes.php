@@ -1,6 +1,6 @@
 <?php 
-$images = get_field('ht_clients');
-$subtitle = get_field('ht_client_text');
+$images = get_field('ht_clients', 'option');
+$subtitle = get_field('ht_client_text', 'option');
 $size = 'full'; // (thumbnail, medium, large, full or custom size)
 
 ?>

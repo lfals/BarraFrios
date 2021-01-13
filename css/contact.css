@@ -1,40 +1,44 @@
-.contact{
+.contact {
   background-color: #0E2047;
-  background-image: url("../image/bg_contato.png");
+  background-image: url("../image/banner-contato.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding:100px 15px;
+  padding: 100px 15px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.contact__form{
-  padding:60px;
+
+.contact__form {
+  padding: 60px;
   background-color: #ffffff;
   border-radius: 15px;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
-.contato-wraper{
+
+.contato-wraper {
   height: 60vh;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url( ../image/banner-contato.png);
+  background-image: url(../image/banner-contato.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.contato-wraper h1{
+
+.contato-wraper h1 {
   font-size: 28px;
   font-weight: bold;
   color: #fff;
 
   margin-bottom: 40px;
 }
-.contato-wraper p{
+
+.contato-wraper p {
   font-size: 14px;
   color: #fff;
   text-align: center;
@@ -43,7 +47,7 @@
   max-width: 412px;
 }
 
-.ht__contato-cta{
+.ht__contato-cta {
 
   color: #fff;
   background: #FF5200;
@@ -54,30 +58,170 @@
   width: 238px;
   height: 51px;
 }
-@media(max-width:800px){
-  .contact__form{
+
+.ht__contato-header-wraper {
+  width: 100vw;
+  height: 80vh;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.ht__contato-header-wraper>div {
+  max-width: 50vw;
+}
+
+.ht__contato-header-wraper>div h1 {
+  font-size: 28px;
+  margin-bottom: 60px;
+}
+
+.ht__contato-header-wraper>div p {
+  font-size: 18px;
+  text-align: justify;
+  max-width: 414px;
+  margin-bottom: 60px;
+}
+
+.ht__contato-header-wraper>div a {
+  text-decoration: none;
+
+}
+
+.ht__contato-header-wraper>div button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 159px;
+  height: 60px;
+  background: #FF5200;
+  border-radius: 20px;
+  filter: drop-shadow(0px 15px 30px rgba(40, 29, 117, 0.25));
+
+  color: #fff;
+}
+
+.ht__contato-body-wraper{
+  min-height: 50vh;
+}
+
+.ht__contato-body-wraper > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+
+}
+
+.ht__contato-body-wraper > div h1 {
+  font-size: 28px;
+  color: #00263B;
+  margin-bottom: 40px;
+}
+
+.ht__contato-body-wraper > div p {
+  font-size: 18px;
+  color: #1a1a1a;
+  margin-bottom:  80px;
+  max-width: 680px;
+  text-align: center;
+}
+
+.ht__contato-body-wraper > div select{
+  width: 414px;
+  height: 52px;
+  border-radius: 15px;
+  border: 0.5px solid #828282;
+
+  background: none;
+  padding: 0 23px;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-overflow:'';
+  text-indent: 0.01px; /* Removes default arrow from firefox*/
+  text-overflow: "";  /*Removes default arrow from firefox*/
+
+  letter-spacing: 0.05em;
+
+/* Gray 3 */
+
+color: #828282;
+font-style: italic;
+}
+select::-ms-expand {
+  display: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.ht__contato-body-wraper > div :after {
+  content: '<>';
+  font: 17px "Consolas", monospace;
+  color: #333;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  right: 11px;
+  /*Adjust for position however you want*/
+  
+  top: 18px;
+  padding: 0 0 2px;
+  border-bottom: 1px solid #999;
+  /*left line */
+  
+  position: absolute;
+  pointer-events: none;
+}
+
+@media(max-width:800px) {
+  .contact__form {
     width: 100%;
-    padding:15px;
+    padding: 15px;
     grid-template-columns: 1fr;
   }
-  .contact__wrapper{ width: 100%;}
-  .contact__submit{width: 100% !important;}
+
+  .contact__wrapper {
+    width: 100%;
+  }
+
+  .contact__submit {
+    width: 100% !important;
+  }
 }
-@media(min-width:801px){
-  .contact__group--subject{ grid-column: 1 / 4;}
+
+@media(min-width:801px) {
+  .contact__group--subject {
+    grid-column: 1 / 4;
+  }
+
   .contact__group--submit,
-  .contact__group--message{ grid-column: 1 / 4;}
+  .contact__group--message {
+    grid-column: 1 / 4;
+  }
 }
-.contact__group--submit{
+
+.contact__group--submit {
   margin-top: 20px;
   justify-self: center;
   width: 100%;
   display: flex;
   justify-content: flex-end;
 }
-.contact__title{ text-align: center;}
-.contact__label{
-  padding:10px;
+
+.contact__title {
+  text-align: center;
+}
+
+.contact__label {
+  padding: 10px;
   display: block;
 
   color: #1B3C86;
@@ -85,9 +229,10 @@
   text-transform: uppercase;
   font-family: GothamBold;
 }
-.contact__field{
+
+.contact__field {
   display: block;
-  padding:15px;
+  padding: 15px;
   margin-top: 15px;
   border: 0;
   border-bottom: 1px solid #BDBDBD;
@@ -96,9 +241,16 @@
   font-family: Gotham;
   font-size: 1rem;
 }
-.contact__field--textarea{ height: 100px;}
-.contact__field:focus{ outline: none}
-.contact__submit{
+
+.contact__field--textarea {
+  height: 100px;
+}
+
+.contact__field:focus {
+  outline: none
+}
+
+.contact__submit {
   DISPLAY: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -111,37 +263,48 @@
   text-align: center;
   filter: drop-shadow(5px 10px 20px rgba(85, 37, 131, 0.25));
 }
-.footer__contact{
+
+.footer__contact {
   background-color: #0E2047;
-  padding:80px 35px;
+  padding: 80px 35px;
   display: flex;
   justify-content: center;
 
   color: #ffffff;
 }
-.footer__contact--item{
+
+.footer__contact--item {
   width: 350px;
-  padding:25px;
+  padding: 25px;
   display: inline-block;
-  margin:0 auto;
+  margin: 0 auto;
 }
-@media(max-width:1050px){
-  .footer__contact--item{
+
+@media(max-width:1050px) {
+  .footer__contact--item {
     width: 100%;
     padding-bottom: 50px;
   }
-  .footer__contact--item:last-child{ padding-bottom: 0;}
+
+  .footer__contact--item:last-child {
+    padding-bottom: 0;
+  }
 }
-.contact__item--wrapper{
+
+.contact__item--wrapper {
   display: grid;
   grid-template-columns: 50px auto;
   grid-gap: 15px;
   align-items: center;
 }
-.footer__contact--title{
+
+.footer__contact--title {
   margin-bottom: 10px;
 
   font-size: 0.75rem;
   font-family: GothamBold;
 }
-.footer__contact--text{ font-size: 0.9rem;}
+
+.footer__contact--text {
+  font-size: 0.9rem;
+}

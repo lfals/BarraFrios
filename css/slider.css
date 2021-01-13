@@ -26,7 +26,7 @@
   padding:15px;
   display: flex;
   align-items: center;
-  background-image:linear-gradient(270deg, rgba(46, 62, 131, 0) 0%, #2E3E83 70%);;
+  background: linear-gradient(90deg, #FFFFFF 13.54%, rgba(255, 255, 255, 0) 100%);
 }
 .home-banner__wrapper--desktop{
   padding:15px 20vw 15px 15px ;
@@ -36,7 +36,7 @@
   margin-bottom: 25px;
   max-width: 400px;
 
-  color: #ffffff;
+  color:#00263B;;
   font: 600 48px 'Montserrat'
 }
 .home-banner__title--desktop span:nth-child(1){
@@ -51,7 +51,7 @@
   font-size: 16px;
   font-family: Gotham;
   text-shadow: 0 5px 10px rgba(0,0,0,0.15);
-  color: #ffffff;
+  color: #1a1a1a;
 
   max-width: 413px;
 }

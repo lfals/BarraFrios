@@ -4,7 +4,9 @@
     </div>
     <div class="bloco-texto">
         <h1 class="ht_produtos__titulo">Conheça Nossos Produtos</h1>
-        <p class="ht_produtos__sobre">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dapibus elementum pellentesque cras justo volutpat. In tortor morbi sed risus ridiculus diam faucibus odio. Ac arcu arcu, sapien nunc, elit.</p>
-        <button class="ht_produtos__cta-button">Saiba Mais</button>
+        <p class="ht_produtos__sobre"><?php print the_field("ht__product-description-short", 7) ?></p>
+        <a href="<?php print the_field("ht__product-description-cta", 7)?>">
+            <button class="ht_produtos__cta-button">Saiba Mais</button>
+        </a>
     </div>
 </div>
