@@ -6,6 +6,8 @@ require_once 'core/setup.php';
 /* Funções dos temas HT */
 require_once 'core/ht_functions.php';
 
+remove_filter('the_content', 'wpautop');
+
 if(
   $_POST[md5("ht-action")] == md5("ht-email") &&
   !empty($_POST[md5("ht-name")]) &&

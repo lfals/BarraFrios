@@ -1,4 +1,4 @@
-.ht__vitrine-container{
+.ht__vitrine-container {
     height: 50vh;
 
     display: flex;
@@ -6,10 +6,11 @@
     align-items: center;
 }
 
-.ht__vitrine-text{
-   max-width: 522px;
+.ht__vitrine-text {
+    max-width: 522px;
 }
-.ht__vitrine-text h1{
+
+.ht__vitrine-text h1 {
     font-size: 28px;
     font-weight: bold;
 
@@ -20,7 +21,8 @@
     font-size: 18px;
     font-weight: normal;
 }
-.ht__vitrine-image{
+
+.ht__vitrine-image {
     width: 522px;
     height: 328px;
 
@@ -30,6 +32,157 @@
     overflow: hidden;
 }
 
-.ht__vitrine-image{
+.ht__vitrine-image {
     object-position: center;
+}
+
+.vitrine-body-wraper {
+    display: flex;
+    justify-content: space-around;
+
+    width: 100vw;
+}
+
+
+
+.filtro-categorias,
+.filtro-subcategorias,
+.filtro-fornecedores {
+    height: 300px;
+    border: 1px solid #FF5200;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+   
+
+}
+
+.filtro-categorias h1,
+.filtro-subcategorias h1,
+.filtro-fornecedores h1{
+    width: 332px;
+    height: 62px;
+
+    /* Laranja */
+
+    background: #FF5200;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.05em;
+text-transform: capitalize;
+
+/* Branco */
+
+color: #FFFFFF;
+}
+
+.vitrine-produtos-wraper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 60vw;
+
+}
+
+.cards-vitrine{
+    margin-bottom: 20px;
+}
+
+.cards-vitrine h1{
+    text-transform: uppercase;
+}
+
+.box-newsletter{
+
+    width: 332px;
+    height: 280px;
+
+    background: #00263B;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 30px;
+}
+
+.box-newsletter h1{
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
+
+letter-spacing: 0.05em;
+text-transform: capitalize;
+
+/* Branco */
+
+color: #FFFFFF;
+}
+
+.box-newsletter p{
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 20px;
+/* or 143% */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.05em;
+
+/* Branco */
+
+color: #FFFFFF;
+}
+
+.box-newsletter input{
+    width: 272px;
+    height: 51px;
+   
+
+    /* Gray 6 */
+    border: none;
+    background: #F2F2F2;
+    border-radius: 15px;
+
+    
+}
+
+.box-newsletter input::placeholder{
+    text-align: center;
+    font-style: italic;
+}
+
+.box-newsletter button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+
+    width: 272px;
+    height: 51px;
+
+
+    /* Verde */
+
+    background: #0CAF88;
+    border-radius: 15px;
 }

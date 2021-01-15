@@ -17,11 +17,11 @@
         <?php 
             while ( $loop->have_posts() ) : $loop->the_post(); 
         ?>
-        <div class="ht_vagas_cards">
-            <h1><?php print the_title() ?></h1>
-			<div>
-           		 <p><?php the_excerpt(  ) ?></p>
-			</div>
+            <div class="ht_vagas_cards">
+                <h1><?php print the_title() ?></h1>
+                <div>
+                    <p><?php the_excerpt(  ) ?></p>
+                </div>
 			</div>
         <?php
             endwhile;

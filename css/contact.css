@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .contact__form {
@@ -104,10 +105,13 @@
 }
 
 .ht__contato-body-wraper{
-  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 1300px;
 }
 
-.ht__contato-body-wraper > div {
+.ht__contato-body-header {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -116,13 +120,13 @@
 
 }
 
-.ht__contato-body-wraper > div h1 {
+.ht__contato-body-header h1 {
   font-size: 28px;
   color: #00263B;
   margin-bottom: 40px;
 }
 
-.ht__contato-body-wraper > div p {
+.ht__contato-body-header p {
   font-size: 18px;
   color: #1a1a1a;
   margin-bottom:  80px;
@@ -130,7 +134,7 @@
   text-align: center;
 }
 
-.ht__contato-body-wraper > div select{
+.ht__contato-body-header select{
   width: 414px;
   height: 52px;
   border-radius: 15px;
@@ -161,7 +165,7 @@ select::-ms-expand {
   appearance: none;
 }
 
-.ht__contato-body-wraper > div :after {
+.ht__contato-body-header :after {
   content: '<>';
   font: 17px "Consolas", monospace;
   color: #333;
@@ -179,6 +183,76 @@ select::-ms-expand {
   
   position: absolute;
   pointer-events: none;
+}
+
+.ht__contato-card-holder{
+  display: flex;
+  flex-direction: row;  
+  justify-content: center;
+  flex-wrap: wrap;
+
+  margin-top: 60px;
+  width: 70%;
+
+}
+.ht__contato-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  width: 414px;
+  height: 208px;
+  margin-top: 20px;
+  margin-right: 20px;
+
+  padding: 40px 0 40px 40px;
+
+  background: #FFFFFF;
+  border-radius: 10px;
+  filter: drop-shadow(5px 10px 20px rgba(196, 196, 196, 0.5));
+
+}
+
+.ht__contato-nome{
+
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 24px;
+
+color: #005887;
+}
+
+.ht__contato-tel{
+  
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  
+  color: #1A1A1A;
+}
+
+.ht__contato-email{
+
+  
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  
+  
+  color: #1A1A1A;
+}
+
+.ht__contato-cep{
+
+  font-weight: bold;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  
+  color: #FF5200;
 }
 
 @media(max-width:800px) {

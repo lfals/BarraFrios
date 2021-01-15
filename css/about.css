@@ -46,6 +46,10 @@
 
   color: #fff;
 }
+.ht_produtos__link{
+  width: 100%;
+  text-decoration: none;
+}
 .ht_produtos__cta-button{
   align-self: flex-start;
   
@@ -116,7 +120,6 @@
 }
 @media(min-width:768px){
   .title{
-    max-width: 285px;
     line-height: 42px;
   }
   .title p {

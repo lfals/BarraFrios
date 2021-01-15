@@ -12,6 +12,7 @@ date_default_timezone_set('america/sao_paulo');
 */
 $ht->register_css(array(
   array("ht_reset", get_template_directory_uri() ."/css/reset.css"),
+  array("ht_newsletter", get_template_directory_uri() ."/css/newsletter.css"),
   array("ht_vitrine", get_template_directory_uri() ."/css/vitrine.css"),
   array("ht_main_css", get_template_directory_uri() ."/css/main.css"),
   array("ht_header_css", get_template_directory_uri() ."/css/header.css"),
@@ -90,6 +91,10 @@ $vagas->do_post();
 $produtos = new ht_custom_post("Produtos", "produto");
 $produtos->set_arg("menu_icon", "dashicons-products");
 $produtos->do_post();
+
+$atendentes = new ht_custom_post("Atendentes", "atendente");
+$atendentes->set_arg("menu_icon", "dashicons-admin-users");
+$atendentes->do_post();
 
 // $mural = new ht_custom_post("Mural de recados", "mural");
 // $mural->set_arg("menu_icon", "dashicons-megaphone");

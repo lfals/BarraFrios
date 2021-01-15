@@ -1,0 +1,90 @@
+.ht__global-newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+
+
+    position: absolute;
+    top: -300px;
+    width: 750px;
+    height: 369px;
+    /* Gray 6 */
+
+    background: #F2F2F2;
+    border-radius: 15px;
+    filter: drop-shadow(5px 15px 30px rgba(83, 83, 83, 0.5));
+}
+
+.ht__global-newsletter h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    /* Azul */
+
+    color: #00263B;
+}
+
+.ht__global-newsletter p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    /* or 150% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    /* preto */
+    color: #1A1A1A;
+}
+
+.ht__global-newsletter input{
+    width: 414px;
+    height: 52px;
+
+    border-radius: 15px;
+
+    border: none;
+}
+
+.ht__global-newsletter input::placeholder{
+    padding-left: 23px;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    
+    /* Gray 3 */
+    
+    color: #828282;
+}
+
+.ht__global-newsletter button{
+    width: 414px;
+    height: 51px;
+    /* Verde */
+
+    background: #0CAF88;
+    border-radius: 15px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    /* Branco */
+
+    color: #FFFFFF;
+}

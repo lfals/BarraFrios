@@ -58,34 +58,7 @@ $taxonomia = get_terms("segmento", array(
               <a href="<?php print get_field("ht_parceiro_instagram", $parceiro); ?>">
                 <i class="fab fa-instagram parceiro__icon"></i>
               </a>
-            <?php endif; ?>
-            <?php if(!empty(get_field("ht_parceiro_whatsapp", $parceiro))): ?>
-              <a href="<?php
-                $telefone = get_field("ht_parceiro_whatsapp", $parceiro);
-                $telefone = str_replace("(","",$telefone);
-                $telefone = str_replace(")","",$telefone);
-                $telefone = str_replace("-","",$telefone);
-                $telefone = str_replace(" ","",$telefone);
-                print "https://wa.me/55{$telefone}";
-              ?>">
-                <i class="fab fa-whatsapp parceiro__icon"></i>
-              </a>
-            <?php endif; ?>
-            <?php if(!empty(get_field("ht_parceiro_site", $parceiro))): ?>
-              <a href="<?php print get_field("ht_parceiro_site", $parceiro); ?>">
-                <i class="fas fa-globe parceiro__icon"></i>
-              </a>
-            <?php endif; ?>
-            <?php if(!empty(get_field("ht_parceiro_rota", $parceiro))): ?>
-              <a href="<?php print get_field("ht_parceiro_rota", $parceiro); ?>">
-                <i class="fas fa-map-marker-alt parceiro__icon"></i>
-              </a>
-            <?php endif; ?>
-          </div>
-        </div>
-      <?php endforeach; ?>
-    </div>
-    <?php if(!empty($link)): ?>
+           mpty($link)): ?>
       <a href="<?php print $link ?>" class="button button--dark parceiros__cta">
         Veja mais <i class="fas fa-long-arrow-alt-right" style="margin-left:15px"></i>
       </a>

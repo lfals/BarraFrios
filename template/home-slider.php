@@ -1,8 +1,10 @@
 <?php
 $p = get_queried_object();
 $banners = get_field("ht_home_banner", $p);
+
 if(!empty($banners)):
 ?>
+
 <div class="home-banner home-banner--desktop home-banner--js">
   <?php foreach($banners as $banner): ?>
     <div class="home-banner__item home-banner__item--desktop" style="background-image:url('<?php print $banner["ht_home_banner_imagem_desktop"]["url"] ?>')">
@@ -14,7 +16,7 @@ if(!empty($banners)):
             <?php print $banner["ht_home_banner_conteudo"]; ?>
           </div>
           <?php if(!empty($banner["ht_home_banner_link"])): ?>
-            <a href="<?php print $banner["ht_home_banner_link"] ?>" class="home-banner__link home-banner__link--desktop">
+            <a href="<?php print $banner["ht_home_banner_link"]["url"] ?>" class="home-banner__link home-banner__link--desktop">
             <?php print $banner["ht_home_banner_cta"] ?>
             </a>
           <?php endif; ?>

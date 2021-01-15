@@ -2,7 +2,7 @@
 $setores = get_field("ht_contact_area", "options");
 ?><div class="contact">
   <div class="contact__wrapper">
-    <h2 class="title title--dark contact__title">Fale conosco</h2>
+    <h2 class="title title--dark contact__title">Envie-nos um E-mail</h2>
     <form class="contact__form" method="post">
       <div class="contact__group">
         <label class="contact__label">
@@ -70,4 +70,10 @@ $setores = get_field("ht_contact_area", "options");
       </div>
     </form>
   </div>
+  <div class="ht__global-newsletter">
+    <h1>Receba Novidades</h1>
+    <p>Cadastre seu contato para receber novidades sempre!</p>
+    <input type="text" name="contato" placeholder="E-mail ou Número de Telefone">
+    <button>Cadastrar Contato</button>
+</div>
 </div>
