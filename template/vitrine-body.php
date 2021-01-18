@@ -21,12 +21,12 @@
         <!-- <div class="filtro-fornecedores">
             <h1>Fornecedores</h1>
         </div> -->
-        <div class="box-newsletter">
+        <form action="POST" class="box-newsletter" id="box-newsletter">
             <h1>Receba Novidades</h1>
             <p>Cadastre seu contato para receber novidades sempre!</p>
-            <input type="text" placeholder="E-mail ou Número de Telefone">
-            <button>Cadastrar Contato</button>
-        </div>
+            <input type="email"  name="site-footer-news-email" id="site-footer-news-email" placeholder="E-mail ou Número de Telefone" >
+            <button type="submit" name="site-footer-news-btn">Cadastrar Contato</button>
+        </form>
     </div>
     <div class="vitrine-produtos-wraper">
         <?php

@@ -36,6 +36,7 @@ $ht->register_css(array(
   array('datapicker_css', get_template_directory_uri() . '/css/vendor/datarangepicker.min.css'),
   array('lightgallery_css', get_template_directory_uri() . '/css/vendor/lightgallery.min.css'),
   array('sweetalert2_css', get_template_directory_uri() . '/css/vendor/sweetalert2.min.css'),
+  array("ht_mobile", get_template_directory_uri() ."/css/mobile.css"),
 ));
 $ht->do_css();
 /*

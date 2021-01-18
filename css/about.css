@@ -16,7 +16,9 @@
   overflow: hidden;
 }
 .imagem img{
+  height: 100%;
   width: 50vw;
+  object-fit: cover;
 }
 .bloco-texto{
   display: flex;

@@ -62,7 +62,7 @@
 @media(max-width:999px){
   .footer{
     flex-direction: column;
-    background: #F2F2F2;
+    background: #00263B;
     padding:100px 35px;
     grid-gap: 50px;
   }

@@ -82,11 +82,12 @@ $nav = ht_get_nav();
       </div>
     </div>
     <div class="ht-nav__control--item">
-      <?php if(!empty($logo["main"])): ?>
+        <h1>Menu</h1>
+      <!-- <?php if(!empty($logo["main"])): ?>
         <img src="<?php print $logo["main"]["url"]; ?>" class="ht-header__logo--image" alt="Logo <?php print bloginfo("name"); ?>">
       <?php else: ?>
         <span class="ht-header__logo--text"><?php print bloginfo("name"); ?></span>
-      <?php endif; ?>
+      <?php endif; ?> -->
     </div>
     <div class="ht-nav__control--item">
       <div class="ht-nav__control--right">

@@ -84,3 +84,56 @@ if(
     die("<h1>Houve algum erro no servidor</h1>");
   }
 }
+
+//Este bloco cria o tipo de post
+$lista = new ht_custom_post("Lista","lista");
+$lista->set_arg("menu_icon", "dashicons-email-alt");
+$lista->set_arg('capabilities', array('create_posts' => 'do_not_allow'));
+$lista->do_post();
+
+//Aqui verificamos se o formulário foi disparado
+// No caso, o campo de email no formulário se chama 'box-newsletter'
+if($_POST["box-newsletter"]){
+  $contato = sanitize_text_field($_POST["box-newsletter"]);
+  $lista_content = array(
+    "post_title" => "Contato de {$contato}",
+    "post_status" => "publish",
+    "post_type" => "lista",
+  );
+  //Aqui ele salva o post
+  $post_lista = wp_insert_post( $lista_content );
+  //E aqui atualiza o campo personalizado com o email
+  update_post_meta($post_lista, "lista_email", "{$contato}");
+  //E redireciona para uma página de obrigado. Você pode criar um campo 
+  // wp_redirect( COLOCAR O ID DE ALGUMA PAGINA);
+  exit;
+}
+//Essa funcao formata como o post será exibido na área interna do site, mostrando só 2 colunas
+function remove_row_actions( $actions ){
+  if( get_post_type() === 'lista' )
+    unset( $actions['view'] );
+  return $actions;
+}
+add_filter( 'post_row_actions', 'remove_row_actions', 10, 1 );
+
+function lista_colunas($columns){
+  $columns = array(
+    'email'     => 'E-mail',
+    'data'      => 'Data',
+  );
+  return $columns;
+}
+add_filter("manage_lista_posts_columns", "lista_colunas");
+
+function lista_custom_colunas($column){
+  global $post;
+
+  if ($column == 'email'){
+    print get_post_meta( $post->ID, "lista_email" )[0];
+  }elseif($column == 'data'){
+    $dataFormatada = new DateTime($post->post_date);
+    print $dataFormatada->format('d/m/Y H:i');
+  }
+	else{print "";}
+}
+add_action("manage_lista_posts_custom_column", "lista_custom_colunas");

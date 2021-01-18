@@ -9,7 +9,7 @@ $setores = get_field("ht_contact_area", "options");
           Nome Completo
           <input
           type="text"
-          name="<?php print md5("ht-nome") ?>"
+          name="<?php print md5("ht-name") ?>"
           class="contact__field"
           placeholder="Ex: Antônio Rodrigues"
           required>
@@ -31,7 +31,7 @@ $setores = get_field("ht_contact_area", "options");
           Telefone
           <input
           type="tel"
-          name="<?php print md5("ht-telefone") ?>"
+          name="<?php print md5("ht-phone") ?>"
           class="contact__field ht-mask__cel"
           placeholder="Ex: exemplo@gmail.com"
           required>
@@ -42,7 +42,7 @@ $setores = get_field("ht_contact_area", "options");
           Assunto
           <input
           type="text"
-          name="<?php print md5("ht-telefone") ?>"
+          name="<?php print md5("ht-phone") ?>"
           class="contact__field">
         </label>
       </div>
@@ -53,7 +53,7 @@ $setores = get_field("ht_contact_area", "options");
         <label class="contact__label">
           Mensagem
           <textarea
-          name="<?php print md5("ht-mensagem") ?>"
+          name="<?php print md5("ht-message") ?>"
           class="contact__field contact__field--textarea"
           cols="8"></textarea>
         </label>
