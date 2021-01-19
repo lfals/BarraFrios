@@ -112,10 +112,11 @@ jQuery(document).ready(function($) {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
-          centerPadding: "60px",
-          dots : true,
+          dots : false,
+          prevArrow : null,
+          nextArrow : null,
         }
       },
     ]

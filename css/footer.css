@@ -34,13 +34,14 @@
   .footer{
     grid-template-columns: 100px auto 450px;
     height: 100px;
+    padding: 20px 10%;
   }
-  .footer__nav{
+  .footer__nav {
     display: flex;
-    
     justify-content: space-evenly;
     width: 60%;
-  }
+    margin: 0 auto;
+}
   .footer__social{ 
     display: hidden;
     width: 120px;

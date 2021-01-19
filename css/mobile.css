@@ -154,4 +154,54 @@
     .ht-nav__mobile--label{
         font-family: 'Gotham';
     }
+    .ht__produto-info{
+        width: fit-content;
+        align-items: center;
+        padding: 0 60px;
+        margin-bottom: 60px;
+    }
+    .header-produto > div {
+        flex-direction: column-reverse;
+    }
+    .ht__produto-info div {
+      
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .ht__produto-info > p:nth-child(2) {
+        max-width: fit-content;
+       
+    }
+    .ht__produto-info div a {
+        width: 100%;
+        margin-right: 0;
+    }
+    .ht__produto-info div p {
+        max-width: fit-content;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .ht__produto-image-container {
+        width: fit-content;
+    }
+    .cortes-card {
+     
+        width: 168px !important;
+        height: 239px;
+      
+    }
+    .cortes-card .card-button{
+        display: none;
+    }
+    .cortes-carrossel-wraper {
+        width: 100%;
+    }
+    .cortes-card h1 {
+        font-size: 11px;
+    }
+
+    .cortes-card p {
+        font-size: 10px;
+    
+    }
 }

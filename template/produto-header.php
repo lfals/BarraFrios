@@ -1,7 +1,7 @@
 <div class="header-produto">
     <div>
         <div class="ht__produto-image-container">
-            <a href="<?php print get_permalink( get_post()->post_parent) ?>">Retornar à página anterior</a>
+            <a class="no-mobile" href="<?php print get_permalink( get_post()->post_parent) ?>">Retornar à página anterior</a>
             <div style="background-image: url('<?php print get_field("ht__produto-foto") ?>'); background-position: center; background-size: cover;">
             </div>
         </div>
