@@ -84,6 +84,12 @@
         margin: 0 auto;
         height: 500px;
     }
+    .filtro-fornecedores{
+        display: none;
+    }
+    .filtro-fornecedores h1{
+        width: 100vw;
+    }
 }
 
 @media(max-width:824px){
