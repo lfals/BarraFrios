@@ -153,6 +153,7 @@ width: 100%;
 .ht-header__cta{
   display: flex;
   justify-content: center;
+  margin: 0 auto;
 }
 .ht-header__social--item{
   padding:0 5px;
@@ -192,7 +193,7 @@ width: 100%;
     font-size: 30px;
   }
   .ht-header__mobile--right{ text-align: right;}
-  .ht-header__mobile--wpp{ color: #00997E; }
+  .ht-header__mobile--wpp{ color: #FF5200; }
   .ht-header__mobile--menu{ color: #1B3C86;  }
   .ht-header__logo{
     width: calc(100% - 100px);

@@ -16,6 +16,22 @@ $nav = ht_get_nav();
       <span class="footer__logo--text"><?php print bloginfo("name"); ?></span>
     <?php endif; ?>
   </div>
+  <div class="footer__nav">
+    <?php if(!empty($nav["nav"])): ?>
+      <div  class="footer__nav--item">
+       
+      </div>
+      <?php foreach($nav["nav"] as $n): ?>
+        <?php if(empty($n["sub_item"])): ?>
+        <div  class="footer__nav--item">
+          <a href="<?php print $n["url"] ?>" class="ht-header__nav--label">
+            <?php print $n["label"] ?>
+          </a>
+        </div>
+        <?php endif; ?>
+      <?php endforeach; ?>
+    <?php endif; ?>
+  </div>
   <div class="footer__social">
     <?php if(!empty($social)): ?>
       <?php if(!empty($social["linkedin"])): ?>
@@ -35,22 +51,7 @@ $nav = ht_get_nav();
       <?php endif; ?>
     <?php endif; ?>
   </div>
-  <div class="footer__nav">
-    <?php if(!empty($nav["nav"])): ?>
-      <div  class="footer__nav--item">
-       
-      </div>
-      <?php foreach($nav["nav"] as $n): ?>
-        <?php if(empty($n["sub_item"])): ?>
-        <div  class="footer__nav--item">
-          <a href="<?php print $n["url"] ?>" class="ht-header__nav--label">
-            <?php print $n["label"] ?>
-          </a>
-        </div>
-        <?php endif; ?>
-      <?php endforeach; ?>
-    <?php endif; ?>
-  </div>
+ 
   
   <div class="footer__items">
     <a href="https://hattrickcomunicacao.com.br" class="footer__link footer__link--hat-trick" target="_blank">

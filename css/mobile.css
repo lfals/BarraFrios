@@ -1,3 +1,91 @@
+@media(max-width:1600px){
+    .ht-header__nav {
+        width: 80%;
+    }
+    .ht-header{
+        padding: 20px 5%;
+    }
+    .ht-header__contact {
+        padding: 15px 10px;
+    }
+    .ht-nav__control--item{
+        display: flex;
+        font-size: 18px;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: capitalize;
+
+        /* Branco */
+
+        color: #FFFFFF;
+    }
+
+    .ht-header__nav--mobile{
+        background: #00263B;
+    }
+    .ht-nav__wrapper--menu {
+        align-items: flex-start;
+        margin-left: 40px;
+    }
+    .ht-nav__mobile{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+
+        /* Branco */
+
+        color: #FFFFFF;
+    }
+    .ht-cta__mobile--botton{
+        margin: 0 auto;
+        width: 70%;
+        background:  #0CAF88;
+        color: #FFFFFF;
+    }
+    .ht-nav__mobile--label {
+        font-family: 'Gotham';
+    }
+    .ht-header__mobile--menu {
+        color: #FF5200;
+    }
+    .ht-nav__control--close, .ht-nav__control--wpp {
+        color:#FF5200;
+        font-size: 30px;
+    }
+    .contato-wraper h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .ht__produto-image-container div {
+        height: 100vw;
+        width: 100vw;
+        background-color: #f2f2f2;
+        border-radius: 0;
+    }
+    .ht__produto-info h1 {
+        font-size: 1rem;
+   }
+   .title {
+       text-align: center;
+    font-size: 1.5rem;
+    }
+    .about__text {
+        padding-right: 0;
+    }
+    .bloco-texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        height: 500px;
+    }
+}
+
 @media(max-width:824px){
     .produtos{
         flex-direction: column;
@@ -204,4 +292,5 @@
         font-size: 10px;
     
     }
+   
 }

@@ -7,8 +7,18 @@
         'post_status' => 'publish',
     );
     $loop = new WP_Query( $args ); 
+    $taxonomies = array();
+    while ( $loop->have_posts() ) : $loop->the_post();
+        $info =  get_field("ht__produto-fabricante");
+        $fabricantes = $info->name;
+        if(!in_array($fabricantes, $taxonomies)){
+            array_push($taxonomies, $fabricantes);
+        };
+    endwhile;
+    
         
     ?>
+    
 
 <div class="vitrine-body-wraper">
     <div class="filtro-wraper">
@@ -18,9 +28,16 @@
         <!-- <div class="filtro-subcategorias">
             <h1>Subcategorias</h1>
         </div> -->
-        <!-- <div class="filtro-fornecedores">
+        <div class="filtro-fornecedores">
             <h1>Fornecedores</h1>
-        </div> -->
+            <ul>
+                <?php 
+                    foreach($taxonomies as $taxonomie){
+                        print '<li> <input type="checkbox" name="'.$taxonomie.'" id="'.$taxonomie.'"><label for="'. $taxonomie. '">'. $taxonomie. '</label></li>';
+                    }
+                ?>
+            </ul>
+        </div>
         <form action="POST" class="box-newsletter" id="box-newsletter">
             <h1>Receba Novidades</h1>
             <p>Cadastre seu contato para receber novidades sempre!</p>
@@ -31,6 +48,7 @@
     <div class="vitrine-produtos-wraper">
         <?php
             while ( $loop->have_posts() ) : $loop->the_post(); 
+                    $fabricante =  get_field("ht__produto-fabricante");
                     $field = get_field_object( 'ht__produto-tipo' );
                     $value = $field['value'];
                     $label = $field['choices'][ $value ];

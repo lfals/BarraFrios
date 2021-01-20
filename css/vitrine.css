@@ -56,6 +56,19 @@
    
 
 }
+.filtro-fornecedores ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80%;
+    align-items: flex-start;
+    margin-left: 60px;
+    list-style: none;
+}
+
+.filtro-fornecedores ul label{
+    margin-left: 15px;  
+}
 
 .filtro-categorias h1,
 .filtro-subcategorias h1,
