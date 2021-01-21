@@ -57,7 +57,7 @@
                         
                         ?>
         <div class="cortes-card cards-vitrine ">
-            <div class="foto-corte" style="  background-position: center; background-image: url(<?php print get_field("ht__produto-foto")?>);">
+            <div class="foto-corte" style=" background-size: contain; background-position: center; background-image: url(<?php print get_field("ht__produto-foto")?>);">
                 <div class="image-button">
                     <a href="<?php print get_post_permalink() ?>">Saiba Mais</a>
                 </div>
