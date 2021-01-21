@@ -28,7 +28,7 @@
         <!-- <div class="filtro-subcategorias">
             <h1>Subcategorias</h1>
         </div> -->
-        <div class="filtro-fornecedores">
+        <!-- <div class="filtro-fornecedores">
             <h1>Fornecedores</h1>
             <ul>
                 <?php 
@@ -37,7 +37,7 @@
                     }
                 ?>
             </ul>
-        </div>
+        </div> -->
         <form action="POST" class="box-newsletter" id="box-newsletter">
             <h1>Receba Novidades</h1>
             <p>Cadastre seu contato para receber novidades sempre!</p>

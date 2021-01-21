@@ -12,13 +12,13 @@
         <h1>Nossos Atendentes Comerciais</h1>
         <p><? print get_field("ht__contato-texto-atendentes")?></p>
 
-        <select name="estados" id="estados">
+        <!-- <select name="estados" id="estados">
             <option value="Selecione seu estado" autofocus>Selecione seu estado</option>
             <option value="Rio de Janeiro">Rio de Janeiro</option>
             <option value="São Paulo">São Paulo</option>
             <option value="Espírito Santo">Espírito Santo</option>
             <option value="Minas Gerais">Minas Gerais</option>
-        </select>
+        </select> -->
     </div>
     <div class="ht__contato-card-holder">
         <?php
