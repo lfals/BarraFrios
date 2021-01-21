@@ -37,7 +37,7 @@ if(!empty($banners)):
           </div>
           <?php if(!empty($banner["ht_home_banner_link"])): ?>
             <a href="<?php print $banner["ht_home_banner_link"] ?>" class="home-banner__link home-banner__link--desktop">
-              <img src="<?php print get_template_directory_uri(); ?>/image/icon-cta-blue.png" class="ht-header__contact--icon" alt="Ícone do CTA"> <?php print $banner["ht_home_banner_cta"] ?>
+              <img src="<?php print get_template_directory_uri(); ?>/image/icon-cta.png" class="ht-header__contact--icon" alt="Ícone do CTA"> <?php print $banner["ht_home_banner_cta"] ?>
             </a>
           <?php endif; ?>
         </div>

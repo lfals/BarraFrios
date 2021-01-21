@@ -90,6 +90,26 @@
     .filtro-fornecedores h1{
         width: 100vw;
     }
+    .ht__vitrine-image{
+        display: none   ;
+    }
+    .about__text p{ 
+        padding-right: 0;
+    }
+    .bloco-texto h1 {
+        font-size: 24px;
+    
+        text-align: center;
+    }
+    .bloco-texto p {
+     
+        text-align: justify;
+    }
+    .ht__global-clientes h1 {
+        font: bold 24px 'Montserrat';
+        color: #00263B;
+        margin: 0;
+    }
 }
 
 @media(max-width:824px){

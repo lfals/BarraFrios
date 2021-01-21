@@ -158,9 +158,8 @@
   }
 }
 .about__text p{ 
-  
+  padding-right: 36px;
   margin-bottom: 25px; 
-  padding: 0;
 }
 
 @media(max-width:767px){

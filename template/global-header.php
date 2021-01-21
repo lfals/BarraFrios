@@ -139,7 +139,7 @@ $nav = ht_get_nav();
   <div class="ht-cta__mobile">
     <?php if(!empty($nav["contact"])): ?>
       <a href="<?php print $nav["contact"] ?>" class="ht-cta__mobile--botton">
-         <img src="<?php print get_template_directory_uri(); ?>/image/icon-cta-blue.png" alt=""> Fale conosco
+         <img src="<?php print get_template_directory_uri(); ?>/image/icon-cta.png" alt=""> Fale conosco
       </a>
     <?php endif; ?>
   </div>
