@@ -64,10 +64,7 @@
     .ht__produto-info h1 {
         font-size: 1rem;
    }
-   .title {
-       text-align: center;
-    font-size: 1.5rem;
-    }
+   
     .about__text {
         padding-right: 0;
     }
@@ -156,6 +153,10 @@
     }
 }
 @media(max-width:824px){
+    .title {
+       text-align: center;
+    font-size: 1.5rem;
+    }
     .produtos{
         flex-direction: column;
         min-height: 120vh;
