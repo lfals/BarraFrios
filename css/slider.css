@@ -81,6 +81,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background: linear-gradient(90deg, #FFFFFF 13.54%, rgba(255, 255, 255, 0) 100%);
+
 }
 .home-banner__wrapper--mobile{
   width: 100%;
@@ -92,7 +94,7 @@
 
   margin-bottom: 25px;
 
-  color: #ffffff;
+  color: #00263B;;
   font: 600 36px 'Montserrat';
 }
 .home-banner__title--mobile span:nth-child(1){
@@ -108,7 +110,7 @@
   font-size: 1rem;
   font-family: Gotham;
   text-shadow: 0 5px 10px rgba(0,0,0,0.15);
-  color: #ffffff;
+  color: #00263B;
 
   max-width: 250px;
 

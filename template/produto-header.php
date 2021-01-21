@@ -22,5 +22,15 @@
             <p class="detail">Categoria: <?php print get_field("ht__produto-tipo") ?></p>
             <p class="detail">Corte: <?php print get_field("ht__produto-corte") ?></p>
         </div>
+        
     </div>
+    <div class="ht__produto-desc">
+            <ul>
+                <li>Descrição</li>
+                <li>informações Adicionais</li>
+            </ul>
+            <p>
+                <?php print get_field("ht__produto-desc") ?>
+            </p>
+        </div>
 </div>

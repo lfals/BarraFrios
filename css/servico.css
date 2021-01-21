@@ -122,3 +122,24 @@ align-self: center;
   line-height: 24px;
   color: #828282;
 }
+
+.ht__produto-desc{
+  width: 100vw;
+  padding: 5%;
+  justify-content: space-around !important;
+}
+.ht__produto-desc p{
+    max-width: 520px;
+}
+
+.ht__produto-desc ul{
+  display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.ht__produto-desc ul li {
+  list-style: none;
+  border-bottom: 1px solid;
+  width: fit-content;
+  padding-bottom: 10px;
+}
